@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast</title>
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/cursor.css">
+    <link rel="stylesheet" href="./css/forecastMap.css">
+    <link rel="stylesheet" href="./css/deployBlock.css">
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <nav id="desktopMenu">
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="search.html">Cameras</a>
+            <a href="weatherMap.html">Weather Map</a>
+            <a class="active" href="#">Forecast</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <nav id="mobileMenu">
+        <div class="profile">
+            <img src="./imgs/car-circle-fill.svg" id="mobile-logo" alt="">
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <h3>Road Cameras<br><span>Cameras</span></h3>
+            <hr id="mobile-hr">
+            <div id="mobile-menu-container">
+                <ul>
+                    <li>
+                        <a href="home.html" class="mobile-menu-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="search.html" class="mobile-menu-link">
+                            Cameras
+                        </a>
+                    </li>
+                    <li >
+                        <a href="weatherMap.html" class="mobile-menu-link">Weather map</a>
+                    </li>
+                    <li >
+                        <a href="forecastMap.html" class="active-mobile-sub-menu-link">Forecast</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="mobile-menu-link">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Forecast Map</h1>
+
+    <div id="search-container">
+        <a href="#search-block"  class="search-container">SEARCH<span id="arrow">></span></a>
+        <div id="search-block" class="container-block">
+            <div class="content-block">
+                <div id="search-container-box">
+                    <input id="search-box" type="text" placeholder="ENTER A ROAD NAME OR NUMBER">
+                    <div id="button-container">
+                        <button id="search-button">SEARCH</button>
+                        <button id="random-button">RANDOM</button>
+                        <button id="reset-button">RESET</button>
+                    </div>  
+                </div>
+                <fieldset id="radioButtons"></fieldset>
+            </div>
+        </div>
+    </div>
+  
+    <div id="loading" style="display: inline-block;"></div>
+
+    <div id="chartBox" class="chartBox">
+        <canvas id="map"></canvas>
+    </div>
+
+    <footer>
+        <p id="copyright">
+            © Jouni Rantanen 
+              <!-- NOTE: Timestamp the copyright -->
+              <script type="text/javascript">
+                var thedate = new Date();
+                document.write(thedate.getFullYear());
+              </script>
+        </p>
+    </footer>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/2.0.1/chartjs-plugin-zoom.min.js" integrity="sha512-wUYbRPLV5zs6IqvWd88HIqZU/b8TBx+I8LEioQ/UC0t5EMCLApqhIAnUg7EsAzdbhhdgW07TqYDdH3QEXRcPOQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/cursor.js"></script>
+    <script src="./js/deployBlock.js"></script>
+    <script src="./js/forecastMap.js" type="module"></script>
+    <script src="./js/detectMobile.js"></script>
+    <script src="./js/mobileMenu.js"></script>
+</body>
+</html>

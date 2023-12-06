@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    height: 100vh;
+    cursor: none;
+    /* background: rgb(27, 27, 27); */
+    /* background-color: #dde1e7; */
+}
+
+.cursor {
+    width: 5px;
+    height: 5px;
+    /* border: 1px solid white; */
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    /* lag in the movement */
+    /* transition-duration: 200ms;
+    transition-timing-function: ease-out; */
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.cursor::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    /* border: 8px solid gray; */
+    border: 6px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -6px;
+    left: -6px;
+    /* animation: cursorAnim2 .3s infinite alternate; */
+}
+
+/* @keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+} */
+
+/* @keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+} */
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: clickAnimation .3s forwards;
+    /* border: 1px solid red; */
+    border: 2px solid white;
+}
+
+/* p {
+  color: white;
+  font-family: 'arial';
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.4em;
+  
+} */

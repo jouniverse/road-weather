@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/cursor.css">
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <nav id="desktopMenu">
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="search.html">Cameras</a>
+            <a href="weatherMap.html">Weather Map</a>
+            <a href="forecastMap.html">Forecast</a>
+            <a class="active" href="about.html">About</a>
+        </div>
+    </nav>
+
+    <nav id="mobileMenu">
+        <div class="profile">
+            <img src="./imgs/car-circle-fill.svg" id="mobile-logo" alt="">
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <h3>Road Weather<br><span>About</span></h3>
+            <hr id="mobile-hr">
+            <div id="mobile-menu-container">
+                <ul>
+                    <li>
+                        <a href="home.html" class="mobile-menu-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="search.html" class="mobile-menu-link">
+                            <p>Cameras</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="weatherMap.html" class="mobile-menu-link">Weather map</a>
+                    </li>
+                    <li class="mobile-view">
+                        <a href="forecastMap.html" class="mobile-menu-link">Forecast</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="active-mobile-sub-menu-link">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1>About</h1>
+
+    <div id="info-box" class="info-box">
+        <p>
+            <b>Road Weather</b> is a road traffic safety app based on the API provided by <a href="https://www.digitraffic.fi/en/">Fintraffic</a><sup>1</sup>. The API provides road weather camera images, road weather station sensor data and road weather forecasts in Finland:
+        </p>
+        <br>
+        <ul>
+            <li>
+                <p>
+                    "<i><b>Road weather cameras.</b></i>  Cameras provide information on current traffic flow and weather conditions. Currently, there are over 470 road weather cameras.[...]Weather camera images are updated approximately about every 10 minutes."
+                </p>
+            </li>
+            <li>
+                <p>
+                    <i><b>"Road weather station data.</b></i>The road weather stations measure e.g. temperature, wind, rain, relative humidity and dew point. Data is updated once per minute. Currently, there are over 350 road weather stations on the Finnish road network."
+                </p>
+            </li>
+            <li>
+                <p>
+                    "<i><b>Road weather forecasts.</b></i> Content is updated every five minutes."
+                </p>
+            </li>
+            <br>
+        </ul>
+        <p>
+            The app allows you to check all the road weather camera images, check the weather conditions of different road weather stations (air temperature, wind, rain and road weather description) and also to check road weather forecasts (up to 12h). You can also do searches for example by city, road name or road number or do quick searches for all the main highways (highways 1-16,18-29).
+        </p>
+        <br>
+        <p>
+            The mobile version has reduced functionality and you are not able to check weather forecasts.
+        </p>
+        <br>
+        <p class="sub-note"><sup>1</sup>
+            The Fintraffic API provides also additional traffic information that is not included in this app, like for example traffic measurement system (TMS) data, traffic messages, TMC/ALERT-C location data, variable signs and road maintenance information.</p>
+    </div>
+
+    <footer>
+        <p id="copyright">
+            © Jouni Rantanen 
+              <!-- NOTE: Timestamp the copyright -->
+              <script type="text/javascript">
+                var thedate = new Date();
+                document.write(thedate.getFullYear());
+              </script>
+        </p>
+    </footer>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>   
+    <script src="./js/weather.js" type="module"></script> -->
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/2.0.1/chartjs-plugin-zoom.min.js" integrity="sha512-wUYbRPLV5zs6IqvWd88HIqZU/b8TBx+I8LEioQ/UC0t5EMCLApqhIAnUg7EsAzdbhhdgW07TqYDdH3QEXRcPOQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="./js/detectMobile.js"></script>
+     <script src="./js/cursor.js"></script>
+     <script src="./js/mobileMenu.js"></script>
+</body>
+</html>
+
