@@ -2,7 +2,7 @@
 
 ## About
 
-<b>Road Weather</b> is a road traffic safety web app based on the API provided by <a href="https://www.digitraffic.fi/en/">Fintraffic</a><sup>1,2</sup>. The API provides road weather camera images, road weather station sensor data and road weather forecasts in Finland<sup>1</sup>:
+[<b>Road Weather</b>](https://jouniverse.github.io/road-weather/home.html) is a road traffic safety web app based on the API provided by <a href="https://www.digitraffic.fi/en/">Fintraffic</a><sup>1,2</sup>. The API provides road weather camera images, road weather station sensor data and road weather forecasts in Finland<sup>1</sup>:
 
 "<i><b>Road weather cameras.</b></i> Cameras provide information on current traffic flow and weather conditions. Currently, there are over 470 road weather cameras.[...]Weather camera images are updated approximately about every 10 minutes."
 
