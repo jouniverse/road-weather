@@ -1,98 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest">
-    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/cursor.css">
-    <link rel="stylesheet" href="./css/scrollbar.css">
-    <link rel="stylesheet" href="./css/home.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/cursor.css" />
+    <link rel="stylesheet" href="./css/scrollbar.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/mobileBlocker.css" />
+  </head>
+  <body>
     <div class="cursor"></div>
-    
-    <nav id="desktopMenu">
-        <div class="navbar">
-            <a class="active" href="home.html">Home</a>
-            <a href="search.html">Cameras</a>
-            <a href="weatherMap.html">Weather Map</a>
-            <a href="forecastMap.html">Forecast</a>
-            <a href="about.html">About</a>
-        </div>
-    </nav>
 
-    <nav id="mobileMenu">
-        <div class="profile">
-            <img src="./imgs/car-circle-fill.svg" id="mobile-logo" alt="">
-        </div>
-        <div class="mobile-menu" id="mobile-menu">
-            <h3>Road Weather<br><span>Home</span></h3>
-            <hr id="mobile-hr">
-            <div id="mobile-menu-container">
-                <ul>
-                    <li id="toggle-mobile-sub-menu">
-                        <a href="#" class="active-mobile-sub-menu-link">
-                            <p>Home</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="search.html" class="mobile-menu-link">Cameras</a>
-                    </li>
-                    <li >
-                        <a href="weatherMap.html" class="mobile-menu-link">Weather map</a>
-                    </li>
-                    <li class="mobile-view">
-                        <a href="forecastMap.html" class="mobile-menu-link">Forecast</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="mobile-menu-link">About</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav id="desktopMenu">
+      <div class="navbar">
+        <a class="active" href="home.html">Home</a>
+        <a href="search.html">Cameras</a>
+        <a href="weatherMap.html">Weather Map</a>
+        <a href="forecastMap.html">Forecast</a>
+        <a href="about.html">About</a>
+      </div>
     </nav>
 
     <h1>Road Weather</h1>
 
     <div id="main">
-        <div class="circle">
-            <img src="./imgs/car-circle-fill-inv.svg" alt="car icon">
-            <img src="./imgs/car-circle-fill.svg" alt="car icon">    
-        </div>
+      <div class="circle">
+        <img src="./imgs/car-circle-fill-inv.svg" alt="car icon" />
+        <img src="./imgs/car-circle-fill.svg" alt="car icon" />
+      </div>
     </div>
 
     <footer>
-        <p id="copyright">
-            © Jouni Rantanen <!-- NOTE: copyright &#169; -->
-              <!-- NOTE: Timestamp the copyright -->
-              <script type="text/javascript">
-                var thedate = new Date();
-                document.write(thedate.getFullYear());
-              </script>
-        </p>
+      <p id="copyright">
+        © jouniverse
+        <!-- NOTE: copyright &#169; -->
+        <!-- NOTE: Timestamp the copyright -->
+        <script type="text/javascript">
+          var thedate = new Date();
+          document.write(thedate.getFullYear());
+        </script>
+      </p>
     </footer>
 
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/2.0.1/chartjs-plugin-zoom.min.js" integrity="sha512-wUYbRPLV5zs6IqvWd88HIqZU/b8TBx+I8LEioQ/UC0t5EMCLApqhIAnUg7EsAzdbhhdgW07TqYDdH3QEXRcPOQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <script src="./js/detectMobile.js"></script>
-     <script src="./js/home.js" type="module"></script>
-     <script src="./js/cursor.js"></script>
-     <script src="./js/mobileMenu.js"></script>
-</body>
-</html>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
+      integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/2.0.1/chartjs-plugin-zoom.min.js"
+      integrity="sha512-wUYbRPLV5zs6IqvWd88HIqZU/b8TBx+I8LEioQ/UC0t5EMCLApqhIAnUg7EsAzdbhhdgW07TqYDdH3QEXRcPOQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
+    <script src="./js/detectMobile.js"></script>
+    <script src="./js/home.js" type="module"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/mobileBlocker.js"></script>
+  </body>
+</html>

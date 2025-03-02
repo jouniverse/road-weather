@@ -1,0 +1,59 @@
+:root {
+  --dark-grey: rgba(94, 104, 121, 0.3);
+  --light-grey: rgba(255, 255, 255, 0.45);
+  --bg: #dde1e7;
+  --dark: #000000;
+
+  /* FONT */
+  /* font-family: 'Space Mono', monospace; */
+  --font: "Space Mono", monospace;
+  --font-color-dark: rgba(1, 1, 1, 0.3);
+  --font-color-light: rgba(1, 1, 1, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--dark-grey);
+  font-family: var(--font);
+  text-align: center;
+  place-items: center;
+  cursor: none;
+}
+
+h1 {
+  color: rgba(94, 104, 121, 0.3);
+  text-decoration: none;
+  text-shadow: 0.1em 0.3em 0.4em var(--dark-grey);
+  letter-spacing: 0.2rem;
+  padding-bottom: 15px;
+  transition: ease-in-out 0.5s;
+}
+
+#copyright {
+  padding: 50px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: var(--dark-grey);
+  text-shadow: 0.1em 0.3em 0.4em var(--dark-grey);
+  transition: ease-in-out 0.5s;
+}
+
+@media (hover: hover) {
+  h1:hover {
+    text-shadow: 0.3em 0.6em 0.4em var(--dark-grey);
+  }
+
+  #copyright:hover {
+    text-shadow: 0.3em 0.6em 0.4em var(--dark-grey);
+  }
+}

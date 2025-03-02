@@ -1,0 +1,31 @@
+#mobile-blocker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#blocker-message {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  max-width: 80%;
+}
+
+#blocker-message h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#blocker-message p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}

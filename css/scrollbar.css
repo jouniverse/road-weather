@@ -1,34 +1,20 @@
-:root 
-{
-    --dark-grey: rgba(94,104,121,0.3);
-    --light-grey:  rgba(255,255,255,0.45);
-    --bg: #dde1e7;
-    --dark: #000000;
-
-    /* FONT */
-    /* font-family: 'Space Mono', monospace; */
-    --font: 'Space Mono', monospace;
-    --font-color-dark:  rgba(1, 1, 1, 0.3);
-    --font-color-light:  rgba(1, 1, 1, 0.3);
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--dark);
 }
 
-* {
-    scrollbar-width: auto;
-    scrollbar-color: var(--dark);
-  }
-
-  /* Chrome, Safari */
- *::-webkit-scrollbar {
-    width: 20px;
-    background-color: var(--dark-grey);
-  }
+/* Chrome, Safari */
+*::-webkit-scrollbar {
+  width: 20px;
+  background-color: var(--dark-grey);
+}
 
 *::-webkit-scrollbar-track {
-    background-color: var(--bg);
-  }
+  background-color: var(--bg);
+}
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--dark-grey);
-    border-radius: 12px;
-    border: 2px solid var(--light-grey);
-  }
+  background-color: var(--dark-grey);
+  border-radius: 12px;
+  border: 2px solid var(--light-grey);
+}
