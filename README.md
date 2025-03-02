@@ -12,7 +12,7 @@
 
 ## Usage
 
-The app allows you to check all the road weather camera images, check the general weather conditions of different road weather stations (air temperature, wind, rain and road weather description) and also to check road weather forecasts (up to 12h). You can also do searches for example by city, road name or road number or do quick searches for all the main highways (highways 1-16,18-29).
+The app allows you to check all the road weather camera images, check the general weather conditions of different road weather stations (air temperature, wind, rain and road weather description) and also to check road weather forecasts (up to 12h). You can also do searches for example by city, road name or road number or do quick searches for all the main highways (highways 1-16,18-29)<sup>3</sup>.
 
 ## Compatibility
 
@@ -28,3 +28,4 @@ All rights reserved.
 <br>
 <sup>2</sup>
 The Fintraffic API provides also additional traffic information that is not included in this app, like for example traffic measurement system (TMS) data, traffic messages, TMC/ALERT-C location data, variable signs and road maintenance information.
+<sup>3</sup> <a href="https://vayla.fi/vaylista/aineistot/kartat/tiekartat">Väylävirasto, Tienumerointi ja tienumerokartat.</a>.
